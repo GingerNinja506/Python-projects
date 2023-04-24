@@ -1,4 +1,4 @@
-#100 days of code challange day 2
+#100 days of code challange day 3
 
 # You are going to write a program that tests the compatibility between two people.
 #To work out the love score between two people:
