@@ -13,11 +13,14 @@ def game():
         lives = 5
         print(f"You have {lives} attempts remaining to guess the number.")
     number = random.randint(0,100)
+    
     while game_on == True:
         guess = int(input("Guess a number : "))
     
-
-        if guess != number and guess > number:
+        if lives == 1:
+              print("Sorry you run out of attemps You Lose!")
+              game_on = False
+        elif guess != number and guess > number:
                 lives -= 1
                 print("Too high")
                 print("Guess again.")
@@ -33,6 +36,7 @@ def game():
 
     
 game()
+    
     
     
     
